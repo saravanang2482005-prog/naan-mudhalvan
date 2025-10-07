@@ -1,0 +1,111 @@
+/* Color Palette: Deep Blue (#1a2c5b), Bright Orange (#ff7f50), Light Gray (#f4f4f9) */
+
+/* --- Page & Centering Styles --- */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* Light gray background for a clean look */
+    background-color: #f4f4f9; 
+    display: flex; 
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    min-height: 100vh; 
+    margin: 0;
+}
+
+/* --- Form Container Styles --- */
+.form-container {
+    background-color: #ffffff; 
+    padding: 30px 45px 50px;
+    border-radius: 15px;
+    /* Stronger shadow for a prominent, floating effect */
+    box-shadow: 0 15px 35px rgba(26, 44, 91, 0.2); 
+    width: 100%;
+    max-width: 480px; /* Limits the width */
+    position: relative; 
+    overflow: hidden; 
+}
+
+/* --- Design Element: Top Orange Stripe --- */
+.design-stripe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 12px; /* Thickness of the stripe */
+    background-color: #ff7f50; /* Bright Orange */
+}
+
+/* --- New Title Styling --- */
+.form-title {
+    text-align: center;
+    color: #1a2c5b; /* Deep Blue title color */
+    /* Adjusted top margin to look centered and spaced correctly */
+    margin-top: 25px; 
+    margin-bottom: 35px;
+    font-size: 1.8em; 
+    font-weight: 700;
+}
+
+/* --- Input Grouping --- */
+.form-group {
+    margin-bottom: 25px;
+}
+
+/* --- Label Styling --- */
+label {
+    display: block; 
+    margin-bottom: 10px;
+    font-weight: 600; 
+    color: #1a2c5b; /* Deep Blue text */
+    font-size: 1.1em; 
+}
+
+/* --- Input Box Styling (Making them BIG) --- */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"] {
+    width: 100%;
+    /* Large padding to make the box big and tall */
+    padding: 16px; 
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1.05em; 
+    color: #333;
+    box-sizing: border-box; 
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* --- Input Focus Effect (Interactive Design) --- */
+input:focus {
+    border-color: #ff7f50; /* Orange border on focus */
+    box-shadow: 0 0 0 3px rgba(255, 127, 80, 0.2); /* Soft orange glow */
+    outline: none; 
+}
+
+/* --- Submit Button Styling --- */
+.submit-button {
+    width: 100%;
+    background-color: #1a2c5b; /* Deep Blue background */
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.25em;
+    font-weight: bold;
+    margin-top: 30px;
+    letter-spacing: 0.5px;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+/* --- Button Hover/Active Effects --- */
+.submit-button:hover {
+    background-color: #ff7f50; /* Changes to Bright Orange on hover */
+    box-shadow: 0 4px 15px rgba(255, 127, 80, 0.4);
+}
+
+.submit-button:active {
+    /* Slight press effect */
+    transform: translateY(1px); 
+}
